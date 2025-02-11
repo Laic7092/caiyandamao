@@ -1,14 +1,32 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/firework-display/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + Vue + TS</title>
-    <script type="module" crossorigin src="/firework-display/assets/index-B9IEEF1k.js"></script>
-    <link rel="stylesheet" crossorigin href="/firework-display/assets/index-DViQtWzG.css">
-  </head>
-  <body>
-    <div id="app"></div>
-  </body>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>彩烟大猫</title>
+  <style>
+    html,
+    body {
+      margin: 0;
+    }
+
+    #app {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <video controls width="320" playsinline="true" webkit-playsinline="true" preload="metadata">
+      <source src="/main.mp4" type="video/mp4" />
+    </video>
+  </div>
+</body>
+
 </html>
